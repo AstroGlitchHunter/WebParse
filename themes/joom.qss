@@ -1,0 +1,158 @@
+QMainWindow, QWidget#ParsePanel {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #1F0B0B, stop:0.5 #2C1010, stop:1 #4A1414);
+    color: #FFE8E8;
+    font-family: "Segoe UI";
+    font-size: 13px;
+}
+
+QLabel#sectionTitle {
+    color: #FFE8E8;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 2px 4px 8px 4px;
+}
+
+QLabel#hintLabel {
+    color: rgba(255, 232, 232, 170);
+    font-size: 12px;
+    padding-bottom: 4px;
+}
+
+QFrame#shopBar {
+    background-color: rgba(245, 66, 66, 24);
+    border: 1px solid rgba(245, 66, 66, 120);
+    border-radius: 28px;
+}
+
+QFrame#searchCard, QFrame#tableCard, QFrame#chartCard {
+    background-color: rgba(61, 22, 22, 180);
+    border: 1px solid rgba(245, 66, 66, 90);
+    border-radius: 20px;
+}
+
+QPushButton#shopButton {
+    background-color: rgba(255, 255, 255, 8);
+    border: 2px solid rgba(245, 66, 66, 40);
+    border-radius: 24px;
+    min-width: 118px;
+    min-height: 118px;
+    padding: 10px;
+}
+
+QPushButton#shopButton:hover {
+    background-color: rgba(245, 66, 66, 45);
+    border: 2px solid #FF6B6B;
+}
+
+QPushButton#shopButton:checked {
+    background-color: rgba(245, 66, 66, 85);
+    border: 3px solid #F54242;
+}
+
+QLineEdit#queryLine {
+    background-color: #4A1C1C;
+    color: #FFE8E8;
+    border: 1px solid rgba(255, 107, 107, 80);
+    border-radius: 14px;
+    padding: 10px 16px;
+    font-size: 14px;
+    min-height: 22px;
+    selection-background-color: #F54242;
+    selection-color: #FFFFFF;
+}
+
+QLineEdit#queryLine:focus {
+    border: 1px solid #FF6B6B;
+}
+
+QPushButton#searchButton, QPushButton#downloadButton {
+    background-color: #F54242;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 14px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 700;
+    min-height: 22px;
+}
+
+QPushButton#searchButton:hover, QPushButton#downloadButton:hover {
+    background-color: #FF5A5A;
+}
+
+QPushButton#searchButton:pressed, QPushButton#downloadButton:pressed {
+    background-color: #D12F2F;
+}
+
+QPushButton#searchButton:disabled, QPushButton#downloadButton:disabled {
+    background-color: #5A2222;
+    color: rgba(255, 232, 232, 140);
+}
+
+QTableView {
+    background-color: #241010;
+    alternate-background-color: #331616;
+    color: #FFE8E8;
+    gridline-color: rgba(255, 107, 107, 40);
+    border: none;
+    border-radius: 12px;
+    selection-background-color: #F54242;
+    selection-color: #FFFFFF;
+}
+
+QTableView::item {
+    padding: 6px;
+}
+
+QHeaderView::section {
+    background-color: #F54242;
+    color: #FFFFFF;
+    padding: 8px;
+    border: none;
+    border-right: 1px solid rgba(255, 255, 255, 30);
+    font-weight: 700;
+}
+
+QTableView QTableCornerButton::section {
+    background-color: #F54242;
+    border: none;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: transparent;
+    border: none;
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: #F54242;
+    border-radius: 5px;
+    min-height: 24px;
+    min-width: 24px;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    height: 0;
+    width: 0;
+}
+
+QMessageBox {
+    background-color: #1F0B0B;
+    color: #FFE8E8;
+}
+
+QMessageBox QLabel {
+    color: #FFE8E8;
+}
+
+QMessageBox QPushButton {
+    background-color: #F54242;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 8px 16px;
+    min-width: 72px;
+}
