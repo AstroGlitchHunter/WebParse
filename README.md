@@ -40,7 +40,7 @@
 ```bat
 python -m venv .venv
 .venv\Scripts\activate
-pip install PyQt6==6.12.0 matplotlib==3.11.2 httpx==0.28.1 camoufox==0.5.8 selectolax==1.0.2
+pip install -r requirements.txt
 ```
 
 Если браузер Camoufox ещё не загружен, выполните:
